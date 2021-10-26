@@ -1,5 +1,5 @@
 package tp3.correction.tp3.correction.type;
-import tp3.correction.tp3.correction.Drink; 
+import tp3.correction.tp3.correction.drink.Drink;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -7,6 +7,7 @@ import lombok.Setter;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import java.util.Set;
+import java.util.HashSet;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
