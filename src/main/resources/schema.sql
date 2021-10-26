@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS drink (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(50),
+  description VARCHAR(100),
+  price NUMERIC,
+  type_id INT
+);
+
+CREATE TABLE IF NOT EXISTS type (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(50),
+  description VARCHAR(100)
+);

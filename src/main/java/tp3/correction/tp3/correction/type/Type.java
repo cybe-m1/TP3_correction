@@ -17,13 +17,13 @@ import javax.persistence.Id;
 @Setter
 @NoArgsConstructor
 @Entity
-public class Type{
+public class Type {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
   private String name;
   private String description;
   @OneToMany
-  @JoinColumn(name = "drink_id")
+  @JoinColumn(name = "type_id")
   private Set<Drink> drinks = new HashSet<>();
 }
