@@ -16,6 +16,7 @@ import javax.persistence.Id;
 public class Drink {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
     private int id;
     private String name;
     private float price;
